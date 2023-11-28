@@ -1,0 +1,245 @@
+:root {
+	--font-family: "Montserrat", sans-serif;
+	--content-width: 1200px;
+	--container-offset: 20px;
+	--container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+	--white-color: #fff;
+	--black-color: #1e1e1e;
+	--violet-color: #964377;
+	--half-violet-color: #9643785d;
+}
+
+/* stylelint-disable */
+/* stylelint-disable */
+/* stylelint-disable */
+.custom-checkbox__field:checked + .custom-checkbox__content::after {
+	opacity: 1;
+}
+
+.custom-checkbox__field:focus + .custom-checkbox__content::before {
+	outline: 2px solid #f00;
+	outline-offset: 2px;
+}
+
+.custom-checkbox__field:disabled + .custom-checkbox__content {
+	opacity: 0.4;
+	pointer-events: none;
+}
+
+/* stylelint-disable */
+/* stylelint-disable */
+/* stylelint-disable value-keyword-case */
+@font-face {
+	font-family: "Montserrat";
+	src: url("../fonts/../fonts/Montserrat-Regular.woff2") format("woff2");
+	font-weight: 400;
+	font-display: swap;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Montserrat";
+	src: url("../fonts/../fonts/Montserrat-Medium.woff2") format("woff2");
+	font-weight: 500;
+	font-display: swap;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Montserrat";
+	src: url("../fonts/../fonts/Montserrat-SemiBold.woff2") format("woff2");
+	font-weight: 600;
+	font-display: swap;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Montserrat";
+	src: url("../fonts/../fonts/Montserrat-Bold.woff2") format("woff2");
+	font-weight: 700;
+	font-display: swap;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Open Sans";
+	src: url("../fonts/../fonts/OpenSans-Regular.woff2") format("woff2");
+	font-weight: 400;
+	font-display: swap;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Open Sans";
+	src: url("../fonts/../fonts/OpenSans-SemiBold.woff2") format("woff2");
+	font-weight: 600;
+	font-display: swap;
+	font-style: normal;
+}
+html {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: inherit;
+	box-sizing: inherit;
+}
+
+.page {
+	height: 100%;
+	font-family: var(--font-family, sans-serif);
+	-webkit-text-size-adjust: 100%;
+}
+
+.page__body {
+	margin: 0;
+	min-width: 320px;
+	min-height: 100%;
+	font-size: 16px;
+}
+
+.site-container {
+	overflow: hidden;
+}
+
+.btn-reset {
+	border: none;
+	padding: 0;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.list-reset {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 var(--container-offset);
+	max-width: var(--container-width);
+}
+
+.hero__container {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.hero__title {
+	font-size: 32px;
+	line-height: 120%;
+	margin: 0;
+	margin-bottom: 20px;
+}
+.hero__grid {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: (1fr) [12];
+	grid-template-columns: repeat(12, 1fr);
+	gap: 25px;
+}
+.hero__item {
+	-ms-grid-column-span: 4;
+	grid-column: 4 span;
+	border: 1px solid var(--violet-color);
+	border-radius: 10px;
+}
+.hero__header {
+	background: var(--violet-color);
+	border-radius: 10px 10px 0 0;
+	padding: 10px 20px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+.hero__body {
+	padding: 16px 20px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	gap: 10px;
+}
+.hero__date {
+	color: var(--white-color);
+	font-size: 20px;
+	line-height: 120%;
+	font-weight: 500;
+}
+.hero__fio {
+	color: var(--black-color);
+	font-size: 20px;
+	line-height: 120%;
+	font-weight: 500;
+}
+.hero__age {
+	color: var(--black-color);
+	font-size: 18px;
+	line-height: 120%;
+	font-weight: 500;
+}
+.hero__phone {
+	color: var(--black-color);
+	font-size: 18px;
+	line-height: 120%;
+	font-weight: 500;
+}
+.hero__service {
+	color: var(--black-color);
+	font-size: 18px;
+	line-height: 120%;
+	font-weight: 500;
+}
+
+.login__container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	padding-top: 20px;
+}
+.login__title {
+	margin: 0;
+	text-align: center;
+	line-height: normal;
+	font-size: 24px;
+	margin-bottom: 15px;
+}
+.login__form {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	gap: 15px;
+	border: 1px solid var(--violet-color);
+	border-radius: 10px;
+	padding: 25px;
+}
+.login__input-text {
+	padding: 8px 11px;
+	color: var(--black-color);
+	text-align: center;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: normal;
+	border-radius: 10px;
+	border: 1px solid var(--half-violet-color);
+}
+.login__button {
+	background: var(--violet-color);
+	border-radius: 10px;
+	padding: 9px 11px;
+	color: var(--white-color);
+	font-weight: 500;
+	margin-top: 10px;
+}
+/*# sourceMappingURL=main.css.map */
